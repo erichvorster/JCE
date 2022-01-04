@@ -1,0 +1,236 @@
+$dark: #1d1d1d;
+$light: #ffffff;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//NAVBAR
+.navbar {
+  height: 60px;
+}
+.img-fluid {
+  max-height: 55px;
+  max-width: auto;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  padding: 0 10px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+  .nav-link {
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+
+    height: 1.5px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+  }
+
+  .nav-link:hover {
+    color: red;
+  }
+
+  .nav-link:hover:after {
+    width: 100%;
+  }
+}
+//HERO
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url(../assets/pexels-john-guccione-wwwadvergroupcom-4134179.jpg);
+  background-size: cover;
+}
+.hero-container {
+  height: 700px;
+  -webkit-appearance: none;
+  border-radius: 0px;
+}
+.hero-img-container {
+  height: 250px;
+}
+.hero-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title {
+  letter-spacing: 1px;
+  font-size: 35px;
+}
+
+@media all and (min-width: 992px) {
+  .title {
+    font-size: 60px;
+  }
+}
+
+.lead {
+  font-size: 25px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $light;
+  width: 190px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  -webkit-appearance: none;
+  border-radius: 0px;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $dark;
+  width: 190px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  -webkit-appearance: none;
+  border-radius: 0px;
+}
+
+.buttons:hover {
+  color: white;
+}
+
+.contact-button:hover {
+  color: $dark;
+}
+
+.buttons::after,
+.buttons::before {
+  border: 2px solid $light;
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+//Contact-button
+.contact-button::after,
+.contact-button::before {
+  border: 2px solid $dark;
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+//Hero-Button
+.buttons:hover::after {
+  transform: translate(5px, -5px);
+}
+
+.buttons:hover::before {
+  transform: translate(-5px, 5px);
+}
+// Projects Section
+
+.project-img {
+  object-fit: cover;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  color: $dark;
+  width: 80px;
+  height: 30px;
+  text-decoration: none;
+  border: 2px solid $dark;
+  -webkit-appearance: none;
+  border-radius: 0px;
+}
+// Contact-Button
+.contact-button:hover::after {
+  transform: translate(5px, -5px);
+}
+
+.contact-button:hover::before {
+  transform: translate(-5px, 5px);
+}
+
+.landing-img {
+  height: 400px;
+}
+
+.banding-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+// About //
+
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../assets/konrad-rolf-qZSN9ukRe_Q-unsplash.jpg");
+  background-size: cover;
+}
+// Services
+.accordion-button {
+  outline: none !important;
+  box-shadow: none;
+  background-color: $light;
+}
+
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none;
+  border-color: $dark;
+  background-color: $light;
+  color: $dark;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+//Contact
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none;
+  border-color: $dark;
+}
+//Footer
+.footer-img-div {
+  height: 50px;
+}
+.footer-img {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 5;
+}
