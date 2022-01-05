@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\pexels-john-guccione-wwwadvergroupcom-4134179.jpg":[["pexels-john-guccione-wwwadvergroupcom-4134179.418c61f3.jpg","../assets/pexels-john-guccione-wwwadvergroupcom-4134179.jpg"],"../assets/pexels-john-guccione-wwwadvergroupcom-4134179.jpg"],"./..\\assets\\konrad-rolf-qZSN9ukRe_Q-unsplash.jpg":[["konrad-rolf-qZSN9ukRe_Q-unsplash.378bc6bf.jpg","../assets/konrad-rolf-qZSN9ukRe_Q-unsplash.jpg"],"../assets/konrad-rolf-qZSN9ukRe_Q-unsplash.jpg"],"_css_loader":"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\assets\\pexels-john-guccione-wwwadvergroupcom-4134179.jpg":[["pexels-john-guccione-wwwadvergroupcom-4134179.418c61f3.jpg","../assets/pexels-john-guccione-wwwadvergroupcom-4134179.jpg"],"../assets/pexels-john-guccione-wwwadvergroupcom-4134179.jpg"],"./..\\assets\\konrad-rolf-qZSN9ukRe_Q-unsplash.jpg":[["konrad-rolf-qZSN9ukRe_Q-unsplash.378bc6bf.jpg","../assets/konrad-rolf-qZSN9ukRe_Q-unsplash.jpg"],"../assets/konrad-rolf-qZSN9ukRe_Q-unsplash.jpg"],"_css_loader":"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60200" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51796" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -393,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/custom.18d3a4a7.js.map
